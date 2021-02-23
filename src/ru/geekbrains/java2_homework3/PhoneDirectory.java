@@ -19,19 +19,22 @@ public class PhoneDirectory {
             directory.put(name, numbersPhone);
         }else {
             //с выводом сообщения
-            Iterator<Integer> i = listPhoneNumbersByName.iterator();
-            boolean isNumder = false;
-            while (i.hasNext()){
-                if(numberPhone == i.next()){
-                    isNumder = true;
-                    break;
-                }
-            }
-            if(isNumder){
-                System.out.printf("Number %d is already in the directory.", numberPhone);
-            }else {
-                listPhoneNumbersByName.add(numberPhone);
-            }
+//            Iterator<Integer> i = listPhoneNumbersByName.iterator();
+//            boolean isNumder = false;
+//            while (i.hasNext()){
+//                if(numberPhone == i.next()){
+//                    isNumder = true;
+//                    break;
+//                }
+//            }
+//            if(isNumder){
+//                System.out.printf("Number %d is already in the directory.", numberPhone);
+//            }else {
+//                listPhoneNumbersByName.add(numberPhone);
+//            }
+
+            //без вывода сообщения
+            listPhoneNumbersByName.add(numberPhone);
         }
     }
 
